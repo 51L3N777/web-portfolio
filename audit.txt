@@ -1,0 +1,22 @@
+Task 1: Perform a Design and Usability Audit
+
+Is my navigation menu clear and easy to find on every page?
+	Yes, I have added a sticky bar to make it easier for the viewer to change pages and makes it easier to find contents.
+
+Is there a clear visual hierarchy? (e.g., Are <h1> headings obviously more important than <h2>
+headings?)
+	Yes, although I did not use many header formats I did not mix and match the headers and made the title the biggest header and everything else just big enough for the viewers to read.
+
+Is the text easy to read? (Consider font size, line spacing, and color contrast).
+	Yes, even though I added extra animation I believe it is easy to read, I have shared my web-portfolio with other people and they have told me it is easy to read and interactive enough.
+
+Task 2: Conduct an Accessibility Check
+
+Ensure every <img> tag has a descriptive alt attribute. If an image is purely decorative, it should have an
+empty alt="" attribute.
+	Yes
+
+On your contact.html page, double-check that every <label> is correctly associated with its <input> or
+<textarea> using the for and id attributes.
+	Yes
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <header class="sticky-header">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">🌙 Dark Mode</button>
+        </header>
+        <main>
+            <h1>Contact Me</h1>
+
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_email">
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="user_message"></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Gomez, Joel</p>
+        </footer>
+    </div>
+    <script>
+        const toggleButton = document.getElementById("theme-toggle");
+        const body = document.body;
+
+        const savedTheme = localStorage.getItem("theme");
+
+        if (savedTheme === "dark") {
+            body.classList.add("dark");
+            toggleButton.textContent = "☀️ Light Mode";
+        }
+
+        toggleButton.addEventListener("click", () => {
+            body.classList.toggle("dark");
+
+            if (body.classList.contains("dark")) {
+                toggleButton.textContent = "☀️ Light Mode";
+                localStorage.setItem("theme", "dark");
+            } else {
+                toggleButton.textContent = "🌙 Dark Mode";
+                localStorage.setItem("theme", "light");
+            }
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
